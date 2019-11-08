@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>抽奖码获取</title>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="抽奖编码,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements"./>
+<script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar() {
+        window.scrollTo(0,1);
+    }
+
+    function savePay() {
+        // 禁用点击事件
+        $("#but").attr("disabled",true);
+
+        // 提交业务
+
+        // 10秒后启用点击事件
+        setTimeout(function(){
+            $("#but").removeAttr("disabled");
+        },10000);
+    }
+    var isclick= true;
+    function click(){
+        if(isclick){
+            isclick= false;
+            //下面添加需要执行的事件
+            for(i=6,b='';i--;)b+=Math.floor(Math.random()*8+1);
+            a.value=b;
+            //定时器
+            // setTimeout(function(){
+            //     isclick = true;
+            // }, 500);
+        }
+    }
+
+</script>
+</script>
+<!--webfonts-->
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+</head>
+<body>
+	<h1>双十一抽奖活动</h1>
+		<div class="app-location">
+			<h2>抽奖编码获取</h2>
+			<div class="line"><span></span></div>
+            <div class="location"><img src="images/location.png" class="img-responsive" alt="" /></div>
+    <div><input id=a type ="text" value="Lottery coding" onfocus="this.value=";" onblur="if(this.value =="){this.value = 'Lottery coding';}"></div>
+    <div class="line"><br/></div>
+
+
+                <div class="submit"><input type="submit" id="but"
+                onclick="
+
+                    for(i=6,b='';i--;)b+=Math.floor(Math.random()*8+1);
+                    a.value=b;
+
+                    this.disabled='false';
+
+
+                "
+                value="抽取抽奖码" ></div>
+                    <div>
+                        <p style=" font-weight:lighter;color:white;opacity:0.3;font-size:12px">
+                            注：截图发送所得获奖码，作获奖凭证，方有效！
+                        </p>
+                    </div>
+                </div>
+		</div>
+	<!--start-copyright-->
+   		<div class="copy-right">
+				<p>Copyright &copy; 2019.Studio Iris's All rights reserved.</p>
+		</div>
+	<!--//end-copyright-->
+
+
+
+</body>
+</html>
